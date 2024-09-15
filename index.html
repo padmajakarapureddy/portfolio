@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padmaja's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Visitor Tracking Script -->
+  <script>
+      let startTime;
+      let endTime;
+      
+      window.onload = function() {
+          startTime = new Date();
+      };
+
+      window.onbeforeunload = function() {
+          endTime = new Date();
+          let timeSpent = endTime - startTime; // Time in milliseconds
+
+          // Send time spent and page URL to the server
+          navigator.sendBeacon('/track-time', JSON.stringify({
+              page: window.location.href,
+              timeSpent: timeSpent
+          }));
+      };
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Padmaja.</a> 
+    <div class="bx bx-menu" id="menu-icon"></div>
+  
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span>Karapureddy Padmaja</span></h1>
+      <div class="text-animation">
+        <h3>Master's student</h3>
+      </div>
+      <p>I'm dedicated to lifelong learning and professional growth. I keep up with the newest developments and industry best practices to ensure I can add significant value to any firm. I am a valuable addition to any team because of my zeal, attention to detail, and commitment to producing high-quality work.</p>
+    </div>
+
+    <div class="home-imgHover">
+      <img src="img1.jpg" alt="Padmaja Image">
+    </div>
+
+    <div class="home-sci">
+      <a href="https://www.linkedin.com/in/karapureddy-padmaja-884657273/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://www.instagram.com/jwalakarapureddy?utm_source=qr&igsh=MWM3c3B3ZWNsaTQxcg==" target="_blank"><i class="bx bxl-instagram"></i></a>
+      <a href="https://x.com/padmaja36393?t=koZAxMSNzi62IhA7RHFSeQ&s=08" target="_blank"><i class="bx bxl-twitter"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate and motivated individual, currently pursuing my master's degree in Information Technology at IIIT Hyderabad. I have a strong dedication to learning and staying up-to-date with the latest industry trends. My ability to work both independently and collaboratively, combined with excellent communication skills, allows me to add significant value to any team I join.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Master of Information Technology - IIIT Hyderabad (Ongoing)</li>
+      <li>Bachelor of Technology in Civil Engineering - Rajiv Gandhi University of Knowledge and Technologies (CGPA: 8.0)</li>
+      <li>Pre-University Course (CGPA: 8.57)</li>
+      <li>Secondary School Certificate (SSC) (CGPA: 10.0)</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <ul>
+        <li><b>Python:</b> Proficient in writing clean, efficient code and developing various applications.</li>
+        <li><b>C Language:</b> Strong foundation in system-level programming and problem-solving.</li>
+        <li><b>AUTOCAD & REVIT:</b> Skilled in 2D drafting and 3D modeling of architectural designs.</li>
+        <li><b>STAAD Pro:</b> Experience in structural analysis and design of civil engineering projects.</li>
+        <li><b>HEC-RAS:</b> Expertise in hydraulic modeling and flood risk management tools.</li>
+        <li><b>Communication:</b> Exceptional verbal and written communication skills, enhancing teamwork and collaboration.</li>
+        <li><b>Problem-solving:</b> Sharp analytical and critical-thinking skills to address complex challenges.</li>
+        <li><b>Adaptability:</b> Quick learner with a strong ability to keep up with new technologies and industry trends.</li>
+      </ul>
+      <img src="skills-image.jpg" alt="Skills Image">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>BIM Integrated with GIS:</b> Gained hands-on experience in integrating Building Information Modeling (BIM) with Geographic Information Systems (GIS) to analyze and manage spatial data for real-world projects.</li>
+      <li><b>Kinetic Roads:</b> Developed and presented a project on kinetic roads that harness energy from vehicle movements, exploring innovative infrastructure solutions.</li>
+      <li><b>HEC-RAS Modeling:</b> Conducted hydraulic modeling using HEC-RAS for river system analysis, focusing on flood risk management and mitigation strategies.</li>
+    </ul>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements" id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li><b>National Level Yogasana Championship:</b> Successfully participated in a national-level yogasana championship, showcasing physical and mental discipline.</li>
+      <li><b>Manager for Under-19 Girls' Squad:</b> Assisted in managing the Andhra Pradesh Yogasana Under-19 Girls squad in the National School Games Federation of India competition.</li>
+      <li><b>University Manager:</b> Worked as a Manager for the university team at the All-India University Competitions tournament, demonstrating leadership and coordination skills.</li>
+      <li><b>BIM Fundamentals Course:</b> Completed a course on the fundamentals of BIM, earning a certification in April 2023.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:padmajakarapureddy@gmail.com">padmajakarapureddy@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/karapureddy-padmaja-884657273" target="_blank">Karapureddy Padmaja</a></p>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
